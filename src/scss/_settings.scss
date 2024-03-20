@@ -1,6 +1,15 @@
 html {
   box-sizing: border-box;
+  // height: 100%;
+  scroll-behavior: smooth;
 }
+
+// html, body {
+//   display: flex;
+//   flex-direction: column;
+//   background-repeat: no-repeat;
+//   min-height: 100%;
+// }
 
 *,
 *::before,
@@ -14,21 +23,41 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-.page__body {
+body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 16px;
+  font-size: clamp(14px, 5vw, 18px);
+  background: var(--body-bg);
+  color: var(--text);
+  line-height: 140%;
+}
+
+.main {
+  flex: 1;
+
+  ul li+li,
+  ul li:first-child,
+  ol li+li,
+  ol li:first-child {
+    margin-bottom: 14px;
+  }
+}
+
+footer {
+  flex: 0;
 }
 
 img {
   height: auto;
   max-width: 100%;
   object-fit: cover;
+
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .site-container {
@@ -104,4 +133,27 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.h1-title {
+  font-size: clamp(24px, 4vw, 48px);
+  line-height: 140%;
+  margin: 0;
+}
+
+.layout-content {
+  background: var(--light-color);
+  box-shadow: var(--box-shadow2);
+}
+
+.float-img-right {
+  float: right;
+  width: 40%;
+  margin-left: 10px;
+}
+
+.float-img-left {
+  float: left;
+  width: 40%;
+  margin-right: 10px;
 }

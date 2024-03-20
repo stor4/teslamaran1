@@ -1,3 +1,33 @@
 <header class="header">
-  <div class="container"></div>
+  <picture>
+    <source srcset="img/header-bg.webp" type="image/webp" />
+    <img src="img/header-bg.jpg" class="header__bg" alt="" />
+  </picture>
+  <div class="container header__inner">
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
+    <h1 class="h1-title header__logo">Teslamaran</h1>
+    <nav class="header__nav" data-menu>
+      <ul class="header__menu list-reset">
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link header__menu-link--active">Home</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Blog</a>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">About</a>
+          <ul class="list-reset header__submenu">
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio architecto praesentium error esse porro deleniti doloribus nostrum neque, ipsa iusto aspernatur delectus minima natus sint ut. Sunt porro repudiandae quia.</a></li>
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Item1</a></li>
+            <li class="header__submenu-item"><a href="#" class="header__submenu-link">Item1</a></li>
+          </ul>
+        </li>
+        <li class="header__menu-item">
+          <a href="#" class="header__menu-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>

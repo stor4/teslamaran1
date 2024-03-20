@@ -1,0 +1,55 @@
+.layout-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.home {
+  &__content {
+    flex: 1 75%;
+    padding: 30px 12px 20px;
+  }
+}
+
+.content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: var(--main);
+    font-family: var(--font-titles);
+  }
+
+  img {
+    border-radius: 4px;
+  }
+  p + p {
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: var(--main);
+
+    &:hover {
+        text-decoration: underline;
+    }
+  }
+
+  ul li+li,
+  ul li:first-child,
+  ol li+li,
+  ol li:first-child {
+    margin-bottom: 14px;
+  }
+}
+
+@include small-tablet {
+  .layout-content {
+    flex-direction: column;
+  }
+
+}

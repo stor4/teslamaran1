@@ -1,0 +1,26 @@
+.aside {
+  flex: 1 25%;
+  padding: 10px 20px;
+
+  &__content {
+    text-align: center;
+  }
+
+  &__nav {
+    text-align: left;
+  }
+
+  &__menu {
+  }
+
+  &__item {
+  }
+
+  &__item-link {
+    color: black;
+
+    &:hover {
+        color: var(--main);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.footer {
+
+    &__text, &__link {
+        color: var(--text);
+        padding: 10px;
+        text-align: center;
+    }
+
+    &__link {
+        display: block;
+    }
+
+    
+}
