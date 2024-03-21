@@ -51,6 +51,7 @@
 
 .section__title {
   position: relative;
+  color: var(--main);
   &::after {
     content: '';
     position: absolute;
