@@ -1,0 +1,16 @@
+.articleCard {
+  // height: 500px;
+  margin: 15px;
+  box-shadow: var(--box-shadow2);
+  border-radius: 4px;
+
+  img {
+    max-height: 200px;
+    width: 100%;
+  }
+
+  &__header {
+    padding: 15px;
+  }
+}
+
