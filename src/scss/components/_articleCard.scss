@@ -35,6 +35,9 @@
     padding: 15px;
     flex: 1 60%;
   }
+  &__title {
+    color: var(--main);
+  }
   &__date {
     color: var(--sub);
     margin-top: 10px;
@@ -42,6 +45,9 @@
     display: flex;
     align-items: center;
     gap: 6px;
+  }
+  &__link {
+    color: var(--main);
   }
 }
 
