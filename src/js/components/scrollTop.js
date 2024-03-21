@@ -10,5 +10,6 @@ window.addEventListener('scroll', function() {
   } else {
       menu.classList.remove('fixed');
       // content.style.paddingTop = 0; // Reset padding
+      console.log(menu);
   }
 });
