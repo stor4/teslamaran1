@@ -52,11 +52,14 @@ img {
   height: auto;
   max-width: 100%;
   object-fit: cover;
-
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button {
   cursor: pointer;
 }
 
@@ -157,6 +160,43 @@ a {
   float: left;
   width: 40%;
   margin-right: 10px;
+}
+
+.default-input {
+  border-radius: 4px;
+  margin: 7px 0 15px;
+  background-color: var(--light-color);
+  border: 1px solid var(--sub);
+  padding: 8px 10px;
+  font-size: 16px;
+}
+
+.default-textarea {
+  border-radius: 4px;
+  margin: 15px 0;
+  background-color: var(--light-color);
+  border: 1px solid var(--sub);
+  padding: 8px 10px;
+  font-size: 16px;
+  overflow-y: scroll;
+}
+
+.default-btn {
+  border-radius: 4px;
+  margin: 15px 0;
+  background-color: var(--light-color);
+  border: none;
+  padding: 8px 10px;
+  font-size: 16px;
+  background-color: var(--main);
+  color: var(--light-color);
+  border: 1px solid var(--main);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--light-color);
+    color: var(--main);
+  }
 }
 
 

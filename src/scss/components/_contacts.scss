@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  height: 100%;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex: 1 50%;
+    padding: 30px;
+  }
+
+  &__map {
+    flex: 1 50%;
+    padding: 30px;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &__checkbox-container {
+  }
+
+  &__checkbox {
+    position: relative;
+    margin-right: 5px;
+  }
+
+  &__checkbox-labe {
+  }
+}
+
+@include small-tablet {
+  .layout-content {
+    flex-direction: column;
+  }
+
+  // .contacts__map {
+  //   display: none;
+  // }
+}
