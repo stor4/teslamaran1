@@ -1,15 +1,15 @@
 window.addEventListener('scroll', function() {
-  let headerHeight = document.querySelector('header').offsetHeight + 30;
-  let menu = document.querySelector('.header__nav');
-  let content = document.querySelector('main');
+  let headerHeight = document.querySelector('.header').offsetHeight;
+  let menu = document.querySelector('.header__menu');
+  let content = document.querySelector('.content');
   let scrollPosition = window.scrollY || window.pageYOffset;
+  let screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
-  if (scrollPosition > headerHeight) {
+  let mobileThreshold = 768;
+
+  if (screenWidth > mobileThreshold && scrollPosition > headerHeight) {
       menu.classList.add('fixed');
-      // content.style.paddingTop = menu.offsetHeight + 'px'; // Add padding to content to prevent it from jumping
   } else {
       menu.classList.remove('fixed');
-      // content.style.paddingTop = 0; // Reset padding
-      console.log(menu);
   }
 });

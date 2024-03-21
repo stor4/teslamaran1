@@ -3,7 +3,7 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 
 
 const swiper = new Swiper(".mainArticlesSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 20,
   loop: true,
   speed: 2000,
@@ -16,7 +16,8 @@ const swiper = new Swiper(".mainArticlesSwiper", {
     clickable: true
   },
   breakpoints: {
-    800: {
+
+    720: {
       slidesPerView: 2,
     }
   }

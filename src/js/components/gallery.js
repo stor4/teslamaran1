@@ -1,8 +1,9 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 Swiper.use([Navigation, Pagination]);
 
-const swiper2 = new Swiper(".mySwiper2", {
+const swiper2 = new Swiper(".modalGallery", {
     spaceBetween: 10,
+    speed: 600,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",

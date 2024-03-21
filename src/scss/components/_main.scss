@@ -52,9 +52,20 @@
   padding-bottom: 60px;
 }
 
+.swiper-pagination {
+  display: none;
+}
+
 @include small-tablet {
   .swiper-pagination {
-    display: none;
+    display: block;
+  }
+}
+
+.section {
+  margin-top: 80px;
+  @include small-tablet {
+    margin-top: 40px;
   }
 }
 

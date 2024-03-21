@@ -5,6 +5,9 @@
     left: 0;
     transform: none;
   }
+  @include small-tablet {
+    padding: 20px 0;
+  }
 }
 
 
@@ -16,11 +19,18 @@
     align-items: center;
     @include small-tablet {
       flex-direction: column;
+      gap: 20px;
     }
   }
 
   &__col {
-    flex: 1 49%
+    flex: 1 49%;
+    position: relative;
+    align-self: stretch;
+    padding: 50px 0;
+    @include small-tablet {
+      padding: 10px;
+    }
   }
 
   &__col:last-child {
@@ -29,10 +39,17 @@
   }
 
   &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     max-width: 450px;
     aspect-ratio: 1/1;
     border-radius: 10% 25% 10% 25%;
-    transform: rotate(-4deg);
+    transform: rotate(-4deg) translate(-50%, -50%);
+    @include small-tablet {
+      position: initial;
+      transform: rotate(-4deg);
+    }
   }
 
   &__btn {

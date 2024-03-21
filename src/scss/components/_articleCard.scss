@@ -71,3 +71,17 @@
 }
 
 
+@include small-tablet {
+  .articleCard {
+    flex-direction: column;
+    height: auto;
+    gap: 0;
+    picture {
+      flex: 1 100%;
+    }
+    img {
+      max-height: 250px;
+    }
+  }
+
+}
