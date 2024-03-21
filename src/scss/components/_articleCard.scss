@@ -4,13 +4,48 @@
   box-shadow: var(--box-shadow2);
   border-radius: 4px;
 
+  h3 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin-top: 5px;
+  }
+
   img {
     max-height: 200px;
     width: 100%;
+    filter: brightness(0.8);
   }
 
   &__header {
     padding: 15px;
   }
 }
+
+@include small-tablet {
+  .articleCard {
+    display: flex;
+    max-width: 500px;
+
+    img {
+      height: 100%;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      max-height: none;
+    }
+
+    picture {
+      flex: 1 25%;
+
+    }
+
+    &__header {
+      flex: 1 75%;
+
+    }
+  }
+
+}
+
 
