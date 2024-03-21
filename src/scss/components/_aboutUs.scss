@@ -50,6 +50,7 @@
     &:hover {
       box-shadow: var(--box-shadow2);
       background: hsl(var(--main), calc(50% + 5%));
+      color: var(--main);
     }
   }
 }
