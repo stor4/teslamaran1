@@ -44,6 +44,14 @@
   bottom: 0;
 }
 
+.swiper.mainArticlesSwiper {
+  overflow: visible;
+}
+
+.main__videos {
+  padding-bottom: 60px;
+}
+
 @include small-tablet {
   .swiper-pagination {
     display: none;
