@@ -3,9 +3,11 @@ Swiper.use([Navigation, Pagination, Autoplay]);
 
 const videoSwiper = new Swiper(".videoSwiper", {
   slidesPerView: 3,
-  // spaceBetween: 0,
+  speed: 2000,
+  autoplay: {
+    delay: 2000,
+  },
     scrollbar: {
       el: ".swiper-scrollbar",
-      // hide: true,
     },
   });
