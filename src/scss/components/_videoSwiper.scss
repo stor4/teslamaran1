@@ -1,91 +1,48 @@
 .videoSwiper {
-  margin-top: 30px;
-  /* width: 1000px; */
   background-color: black;
-  // max-width: 500px;
-  max-width: 90%;
+  
+  overflow: hidden;
+
+  .swiper-wrapper {
+    background-color: #000;
+  }
+
+  .swiper-slide {
+    // width: 100%;
+    // height: 300px;
+  }
 }
 
 .video__slide {
   height: 300px;
-  background-image: url(../img/photo_2024-03-13_20-18-36.jpg);
+  // background-image: url(../../img/video-bg.jpg);
+  color: transparent;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   lite-youtube {
       width: 100%;
       max-width: 335px;
       height: 75%;
   }
+
+  &::after {
+    content: '';
+    // background-image: url(../img/video-bg.jpg);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100px;
+    display: block;
+    z-index: 3;
+    left: -62px;
+    top: 0;
+  }
 }
-
-// .swiper-slide {
-//     width: 500px;
-//     height: 100%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     position: relative;
-//     color: white;
-// }
-
-// .x.mandatory-scroll-snapping {
-//     scroll-snap-type: x mandatory;
-//   }
-
-
-
-
-// .videoGallery {
-//     width: 100%;
-
-// 		&__container {
-// 		}
-
-// 		&__item {
-// 		}
-//         .container > div {
-
-//             text-align: center;
-//             scroll-snap-align: center;
-//             flex: none;
-//         }
-// }
-
-.videoGallery {
-  overflow-x: auto;
-  overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  white-space: nowrap;
-  // width: 300px;
-  margin: 30px 0;
-  // width: 100%;
-}
-
-.video__slide {
-  scroll-snap-align: start;
-  height: 300px;
-  width: 100%;
-  background-image: url(../img/photo_2024-03-13_20-18-36.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-lite-youtube {
-  width: 100%;
-  max-width: 335px;
-  height: 75%;
-}
-
-
-
-
