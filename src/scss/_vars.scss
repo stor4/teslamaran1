@@ -8,20 +8,14 @@
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-
   // colors
   --light-color: #fff;
   --main: #038aff;
   --text: #474554;
   --sub: #aca9bb;
   --errors: #ff4e5c;
-
   --body-bg: linear-gradient(180deg, var(--light-color) 75%, var(--main) 100%);
-
   --box-shadow: -1px 11px 40px 0px rgba(0,0,0,0.58);
   --box-shadow2: 0 8px 10px 0px rgba(0,0,0,0.3);
-
-
-
-
+  --box-shadow3: -2px 5px 8px 0px rgba(0,0,0,0.3);
 }

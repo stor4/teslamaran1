@@ -1,0 +1,28 @@
+.article {
+
+  &__item {
+  }
+
+  &__item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item-date {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  &__item-text {
+  }
+}
+
+
+.h2 {
+
+  &__title {
+  }
+}
+

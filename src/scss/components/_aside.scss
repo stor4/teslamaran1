@@ -6,18 +6,48 @@
     text-align: center;
   }
 
+  &__title {
+    display: block;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid var(--sub);
+    border-left: 3px solid var(--main);
+    padding: 5px 12px;
+    box-shadow: var(--box-shadow3);
+    margin-bottom: 20px;
+  }
+
   &__nav {
     text-align: left;
+    counter-reset: content;
   }
 
   &__menu {
   }
 
   &__item {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  &__item-counter::before {
+    content: counter(content);
+    counter-increment: content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    display: grid;
+    place-items: center;
+    margin-right: 5px;
+    background: var(--main);
+    border-radius: 4px;
+    color: var(--light-color);
   }
 
   &__item-link {
-    color: black;
+    color: var(--text);
 
     &:hover {
         color: var(--main);

@@ -1,3 +1,2 @@
-console.log('components');
-
-import './components/asideContent'
+import './components/asideContent';
+import './components/scrollTop';

@@ -6,7 +6,7 @@ let i = 0;
 
 titles.forEach(title => {
     title.id = `id_${i}`;
-    asideMenu.innerHTML +=  `<li class="aside__item"><a href="#id_${i}" class="aside__item-link">${title.innerText}</a></li>`
+    asideMenu.innerHTML +=  `<li class="aside__item"><span class="aside__item-counter"></span><a href="#id_${i}" class="aside__item-link">${title.innerText}</a></li>`
     i++
 })
 
