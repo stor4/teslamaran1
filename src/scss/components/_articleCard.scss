@@ -4,7 +4,8 @@
   border-radius: 8px;
   display: flex;
   overflow: hidden;
-  height: 400px;
+  height: 250px;
+  gap: 20px;
 
   h3 {
     margin-bottom: 0;
@@ -12,17 +13,35 @@
 
   p {
     margin-top: 5px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  picture {
+    flex: 1 45%;
   }
 
   img {
     width: 100%;
-    flex: 1 40%;
+    height: 100%;
     object-fit: cover;
+    border-radius: 0;
   }
 
   &__header {
     padding: 15px;
     flex: 1 60%;
+  }
+  &__date {
+    color: var(--sub);
+    margin-top: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
 }
 
