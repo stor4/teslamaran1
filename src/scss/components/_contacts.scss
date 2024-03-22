@@ -16,7 +16,7 @@
     padding: 30px;
 
     img {
-      height: auto;
+      height: 100%;
       aspect-ratio: 2 / 3;
     }
   }
@@ -33,12 +33,39 @@
   }
 }
 
-@include small-tablet {
-  .layout-content {
-    flex-direction: column;
+@include tablet {
+  .contacts {
+    justify-content: center;
+
+    &__form {
+      max-width: 700px;
+
+      h3, h2, p {
+        text-align: center;
+      }
+    }
   }
 
-  // .contacts__map {
-  //   display: none;
-  // }
+  .contacts__map {
+    display: none;
+  }
 }
+
+// @include small-tablet {
+//   .layout-content {
+//     flex-direction: column;
+//   }
+
+//   .contacts {
+//     &__form {
+
+//       h3, h2, p {
+//         text-align: center;
+//       }
+//     }
+//   }
+
+//   .contacts__map {
+//     display: none;
+//   }
+// }

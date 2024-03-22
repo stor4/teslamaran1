@@ -1,4 +1,43 @@
-<div class="loyout-content">
-  @include('aside.html')
-  <div class="content"></div>
+<div class="container">
+  <div class="layout-content blogPage">
+    @include('aside.html')
+    <div class="content blogPage__list">
+      <div class="content blogPage__grid">
+        @include('./articleCard.html') @include('./articleCard.html')
+        @include('./articleCard.html') @include('./articleCard.html')
+        @include('./articleCard.html') @include('./articleCard.html')
+      </div>
+      <button id="more-items" class="btn-reset btn-more load-more" data-page="/stories/?page=2"><img src="/img/icon-refresh.svg" alt="">
+        <span>показати ще</span>
+    </button>
+      <nav class="pagination-nav">
+        <ul class="pagination">
+          <li class="pagination__item">
+            <span class="pagination__link is-active">1</span>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">6</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">7</a>
+          </li>
+          <li class="pagination__item pagination__item-next">
+            <a class="pagination__link" href="#"></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </div>
