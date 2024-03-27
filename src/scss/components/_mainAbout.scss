@@ -1,0 +1,41 @@
+.mainAbout {
+  padding: 15px;
+
+		&__title {
+      font-size: 42px;
+      font-weight: 500;
+      line-height: 50px;
+      color: var(--main);
+      margin-left: 15px;
+      max-width: 700px;
+      text-transform: uppercase;
+		}
+
+		&__container {
+      display: flex;
+		}
+
+		&__col1, &__col2 {
+      flex: 1 50%;
+      margin: 0 15px;
+		}
+
+    img {
+      height: 320px;
+      width: 100%;
+      border-radius: 12px;
+    }
+}
+
+@include tablet {
+  .mainAbout {
+    &__title {
+      text-align: center;
+    }
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+}
+
