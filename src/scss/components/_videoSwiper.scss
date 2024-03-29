@@ -5,6 +5,11 @@
   .swiper-wrapper {
     background-color: #000;
   }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: var(--main);
+  }
 }
 
 .video__slide {

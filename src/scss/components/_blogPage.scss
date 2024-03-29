@@ -1,8 +1,14 @@
 .blogPage {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   .aside {
     flex: 1 20%;
+  }
+
+  &__container {
+    display: flex;
   }
 
   &__list {
@@ -215,6 +221,13 @@
       margin: 15px 10px;
     }
 
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .pagination__item-next {
+    display: none;
   }
 }
 
