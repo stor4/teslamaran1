@@ -18,20 +18,21 @@
   }
 }
 
-.load-more {
-  width: 196px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 9px 16px;
-  margin-bottom: 0;
-}
+// .btn-reset {
+//   border: none;
+//   padding: 0;
+//   background-color: transparent;
+//   cursor: pointer;
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+//   border-radius: 32px;
+//   gap: 8px;
+// }
+
 
 .btn-more {
   display: block;
@@ -49,22 +50,30 @@
   white-space: nowrap;
   color: var(--text);
 }
-.btn-reset {
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
+
+.load-more {
+  width: 196px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  border-radius: 32px;
-  gap: 8px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 9px 16px;
+  margin-bottom: 0;
+
+  &:hover {
+    border: 1px solid var(--main);
+    color: var(--main);
+  }
+
+  img {
+    margin-right: 8px;
+  }
 }
-
-
 
 .pagination {
   display: -webkit-box;
@@ -114,15 +123,24 @@
   -ms-flex-align: center;
   align-items: center;
   margin: 36px auto 40px;
+  color: var(--text);
 }
 
 .pagination__item {
-  margin-right: 8px
+  margin-right: 8px;
+
+  a {
+    color: var(--text);
+  }
+
+  &::marker {
+    content: '';
+  }
 }
 
 .pagination__link {
   padding: 12px 19px;
-  // border: 1px solid var(--text);
+  border: 1px solid var(--text);
   border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
@@ -130,6 +148,13 @@
   text-transform: uppercase;
   display: block;
   position: relative;
+  color: var(--text);
+
+  &:hover {
+    border: 1px solid var(--main);
+    color: var(--main);
+    text-decoration: none !important;
+  }
 }
 
 .pagination__item-next {
@@ -155,6 +180,13 @@
   top: 25%;
   left: 0;
   transform: translateX(35%);
+}
+
+.is-active {
+  &:hover {
+    border-color: var(--text);
+    color: var(--text);
+  }
 }
 
 @include tablet {
