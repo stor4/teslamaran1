@@ -68,10 +68,15 @@
   &:hover {
     border: 1px solid var(--main);
     color: var(--main);
+
+    img {
+      filter: brightness(0) saturate(100%) invert(12%) sepia(80%) saturate(1802%) hue-rotate(203deg) brightness(91%) contrast(111%);
+    }
   }
 
   img {
     margin-right: 8px;
+    filter: brightness(0) saturate(100%) invert(0%) sepia(99%) saturate(2%) hue-rotate(35deg) brightness(97%) contrast(100%);
   }
 }
 
