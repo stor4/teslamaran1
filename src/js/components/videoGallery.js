@@ -2,7 +2,7 @@ import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 Swiper.use([Navigation, Pagination, Autoplay]);
 
 const videoSwiper = new Swiper(".videoSwiper", {
-  slidesPerView: 1,
+  slidesPerView: 1.5,
   speed: 2000,
     scrollbar: {
       el: ".swiper-scrollbar",
@@ -13,13 +13,13 @@ const videoSwiper = new Swiper(".videoSwiper", {
     },
     breakpoints: {
       800: {
-        slidesPerView: 1.8,
+        slidesPerView: 2.5,
       },
       1024: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
       1360: {
-        slidesPerView: 4,
+        slidesPerView: 6,
       }
     }
   });

@@ -212,11 +212,15 @@
   .blogPage {
     .aside__menu {
       display: flex;
-      // flex-direction: column;
+      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+      max-height: 250px;
+      overflow-y: scroll;
     }
-
+    .blogPage__list {
+      padding: 15px 5px 15px;
+    }
     .aside__item {
       margin: 15px 10px;
     }
